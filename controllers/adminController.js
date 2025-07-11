@@ -40,14 +40,15 @@ const addDoctor = async (req, res) => {
                  const doctorData = {
                     name,
                     email,
-                    Image:imageUrl,
+                    image:imageUrl,
                     password:hashedPassword,
                     speciality,
                     degree,
                     experience,
                     about,
                     fees,
-                    address:JSON.parse(address),
+                    // address:JSON.parse(address),   
+                    address,
                     date:Date.now()
 
                  }

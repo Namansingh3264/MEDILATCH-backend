@@ -14,6 +14,8 @@ connectCloudinary() // Connect to Cloudinary
 //middlewares
 app.use(cors());
 app.use(express.json()); // To parse JSON bodies
+app.use('/uploads', express.static('uploads'));
+
 
 //api endpoints
 app.use('/api/admin' , adminRouter)
