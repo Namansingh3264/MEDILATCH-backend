@@ -11,7 +11,10 @@ const doctorSchema = new mongoose.Schema({
     about: {type:String, required:true},
     available: {type:Boolean, default:true},
     fees: {type:Number, required:true},
-    address: {type:String, required:true},
+    address: {
+    line1: { type: String, required: true },
+    line2: { type: String, required: true }
+  },
     date: {type:Date, required:true},
     slots_booked: {type:Object, default:{}},
 },{minimize: false})
