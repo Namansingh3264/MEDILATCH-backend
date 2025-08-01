@@ -34,5 +34,8 @@ app.get('/', (req, res) => {
 });
 
 // Start server
-app.listen(port, () => 
-  console.log("Server started ",port))
+// app.listen(port, () => 
+//   console.log("Server started ",port))
+
+// ✅ Export app for Vercel
+export default app;
